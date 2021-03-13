@@ -1,0 +1,102 @@
+Stack tecnologico
+-> grupo de tecnologias que, usadas de manera conjunta en un proyecto, nos permiten crear una aplicación completa.
+-> podemos crear aplicaciones desde la parte front-end hasta la parte del back-end usando una misma tecnologia como base.
+-> cada stack de programacion sugiere la utilizacion de una serie de herramientas.
+
+MEAN Stack
+- MongoDB (base de datos)
+- Express (back)
+- Angular (front)
+- NodeJs (motor de ejecución)
+
+Angular
+-> se trata de uno de los frameworks mas importantes para el desarrollo de aplicaciones de tipo SPA.
+-> las aplicaciones generadas con Angular son cross-platform, por lo que pueden funcionar en diferentes dispositivos (móvil, escritorio...)
+-> Se basa, como muchos frameworks modernos en el patron de desarrollo MVC (Modelo Vista Controlador)
+-> Caracteristicas
+    -> Aplicaciones Web Progresivas (PWA)
+        - Se utilizan las plataformas mas modernas de desarrollo Web para crear webs que se parezcan al concepto que tenemos de aplicaciones.
+        - Alguna de las Caracteristicas principales serian el alto rendimiento, el trabajo offline y la ventaja de no necesitar instalacion de ningun tipo.
+        - muchas de las plataforma hibridas como Ionic estan ofreciendo la posibilidad de crear PWA a traves de sus herramientas.
+    -> Desarrollo nativo y de escritorio
+        - Podemos utilizar Angular en combinacion con frameworks como Ionic, NativeScript o ReactNative para crear aplicaciones nativas para dispositivos moviles.
+        - de la misma manera, podemos desarrollar aplicaciones nativas de escritorio usando la potencia de Angular
+        - Nos ofrecen el acceso a las diferentes APIs nativas del sistema operativo.
+    -> Generacion de codigo
+        - Angular transforma las plantillas en codigo altamente optimizado para el trabajo en una maquina virtual Javascript.
+        - nos permite tener todos los beneficios de la creacion manual de codigo, pero con la potencia de cualquiera de los mejores frameworks.
+    -> Universal
+        - El codigo generado es puramente HTML y CSS, por lo que podemos renderizar todos los navegadores.
+        - Disponemos de diferentes herramientas para optimizar el SEO de nuestras paginas.
+    -> Division del codigo
+        - El usuario unicamente carga la parte de la pagina que necesita usar en cada momento, con lo que ahorramos muchos tiempos de carga.
+        - la creacion de componentes reutilizables favorece la belocidad de carga en el navegador.
+    -> plantillas
+        - creacion de componentes de interfaz de usuario muy potentes a partir de una sintaxis muy simple.
+    -> Angular CLI
+        - Disponemos de una herramienta para la linea de comandos que aligera el trabajo del desarrollador.
+    -> IDEs
+        - se encuentra incorporado en la mayoria de IDEs. Disponemos de multitud de herramientas para el autocompletado de codigo, manejo de errores, feedback.
+    -> Testing
+        - Angular se encuentra totalmente adaptado al trabajo con librerias de testing importantes como Karma y Protractor.
+    -> Animaciones
+        - Podemos llegar a crear complejas animaciones dentro de nuestro navegador de manera muy sencilla, con unas simples lineas de codigo.
+    -> Accesibilidad
+        - componentes especiales para la generacion de aplicaciones accesibles siguiendo los estandares mas habituales.
+-> Arquitectura
+    - Modulo, parte principal
+    - Componentes, se conectan a traves del modulo principal
+    - Directiva
+    - Pipe
+    - Se pueden crear modulos propios, pero todos deben conectarse al modulo principal
+    - librerias
+        - formsModule
+        - HttpClientModule
+- en angular todos son componentes, ej: el navigation bar o side bar, cada uno es un componente, porque asi si es mas facil cambiarlo.
+- si tengo distintos usuarios, al final lo que creo en el componente son distintas instancias de usuarios.
+
+
+DIRECTIVAS
+- Cualqueira de los elementos que representamos dentro de las plantillas de nuestras paginas web, ya sean etiquetas o atributos.
+- Por lo tanto, los componentes que definamos en nuestras aplicaciones, tambien pueden ser considerados como directivas.
+- En este caso, lo destacable es que estas directivas especiales llevan asociadas una plantilla HTML.
+- se dividen en:
+    - Atributo 
+        - Referencia a aquellas que se utilizan para modificar ciertos estilos dentro del DOM(ejemplo modificar el style o class)
+    - Estructurales
+        - Modificar la propia estructura de nuestra pagina web
+- Podemos crear nuestras propias directivas personalizadas.
+
+ROUTING
+- El concepto de routing con aplicaciones de tipo SPA es muy diferente a la creacion habitual de enlaces para navegar entre paginas.
+- Activamos o desactivamos componentes en funcion de la rta qe tengamos en nuestro navegador.
+- Si mantenemos una navegacion normal a traves de enlaces perdemos la posibilidad de trabajar con urls especificas o el historico del navegador.
+
+SERVICIOS
+- Se encarga de realizar acciones concretas sobre los datos de nuestra aplicacion.
+- Para poder utilizar los servicios dentro de nuestros componentes disponemos de la inyeccion de dependencias.
+- Son muy utiles si necesitamos compartir informacion entre los diferentes componentes de nuestra aplicacion.
+- Son el punto de salida para poder recuperar datos externos a nuestra aplicacion.
+
+FORMULARIOS
+- son la herramienta fundamental dentro de nuestras aplicaciones web para recupera informacion del usuario.
+- Deben controlar los cambios que se produzcan en los diferentes campos.
+- los formularios deben validar los datos que el usuario introduzca y mostrar instrucciones que ayuden al usuario en su cumplimiento.
+- dos tipos: 
+    -TEMPLATE.- trabaja mucho en html, la plantilla, se usan mas para implementacion sencilla, como un letter o login
+    -MODEL .- se genera una instancia o un objeto y cada input sera un objeto.
+
+PIPES
+- utilizamos esta herramienta para poder transformar nuestros datos en el momento de mostrarlos dentro de nuestra plantilla.
+- tenemos una serie de Pipes definidos dentro de la propia libreria de Angular, pero tambien podemos crear los nuestroa personalizados.
+
+Testing
+- Mediante la creacion de pruebas podemos comprobar que nuestro codigo funcione correctamente para diferentes grupos de valores.
+- Nos permite automatizar esta comprobacion, ahorrando tiempo al desarrollador.
+- intentamos evitar los errores antes de que nuestra aplicacion pase a otros entornos.
+- no nos evita el 100% de los errores, pero so los minimiza.
+- Tipos:
+    - Uni Test.- Se trata de tests aislados sin recursos externos.
+    - Integration Test.- Pruebas de componentes con recursos externos.
+    - End-to-end.- Simulacion de usuario real.
+    

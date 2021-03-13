@@ -1,0 +1,9 @@
+<agm-map [latitude]="latitud" [longitude]="longitud" [zoom]="10" [FitBounds]="true">
+    <agm-marker [latitude]="latitud" [longitude]="longitud" [markerDraggable]="true"></agm-marker>
+    <agm-marker *ngFor="let pais of paises" [latitude]="pais.latlng[0]" [longitude]="pais.latlng[1]" [iconUrl]="{ url: pais.flag, scaledSize: {width: 20, height: 15 }}" [agmFitBounds]="true">
+        <agm-info-window>
+            <h3>{{ pais.translations.es }}</h3>
+            <button>Pulsa!!!</button>
+        </agm-info-window>
+    </agm-marker>
+</agm-map>

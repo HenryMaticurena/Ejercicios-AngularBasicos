@@ -1,0 +1,61 @@
+<!-- Clase 
+  <button (click)="onClickUpdate()">Actualizar Post</button>
+<button (click)="onClickDelete()">Borrar Post</button>
+<div>
+   <button (click)="onClickPost()">Peticion POST</button>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Titulo</label>
+      <input type="text" formControlName="title">
+    </div>
+    <div>
+      <label>Body</label>
+      <input type="text" formControlName="body">
+    </div>
+    <div>
+      <label>User ID</label>
+      <input type="text" formControlName="userId">
+    </div>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+<div class="posts">
+  <div class="post" *ngFor="let post of arrPosts" (click)="onClick(post.id)">
+    <h4>{{ post.title }}</h4>
+    <p>{{ post.body }}</p>
+    <p>{{ post.userId }}</p>
+  </div>
+</div> -->
+
+<!-- Ejercicio 1 -->
+<!-- 
+<div class="paises">
+  <div class="pais" *ngFor="let pais of paises">
+    <img [src]="pais.flag">
+    <h3>{{ pais.translations['es'] }}</h3>
+    <p>Capital: {{ pais.capital }}</p>
+  </div>
+</div> -->
+
+<!-- Ejercicio 2 -->
+
+<div class="container">
+  <h1>Lista de personajes</h1>
+  <h3>
+    Páginas: {{ numPages }}<br>
+    Num Página: {{ currentPage }}
+  </h3>
+  <div class="botones">
+    <button class="btn btn-primary" (click)="changePage(false)" [disabled]="currentPage === 1">Anterior</button>
+    <button class="btn btn-primary ml-2" (click)="changePage(true)" [disabled]="currentPage === numPages">Siguiente</button>
+  </div>
+  <div class="row">
+    <div class="col-6 col-md-3" *ngFor="let personaje of arrPersonajes">
+      <div class="personaje" [ngClass]="{vivo: (personaje.status === 'Alive'), muerto: (personaje.status === 'Dead')}" >
+        <h3>{{ personaje.name }}</h3>
+        <img [src]="personaje.image">
+        <p>{{ personaje.species }}</p>
+      </div>
+    </div>
+  </div>
+</div>

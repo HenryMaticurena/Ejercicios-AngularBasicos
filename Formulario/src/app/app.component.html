@@ -1,0 +1,16 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div class="menu">
+        <button class="btn btn-primary mr-2" [routerLink]="['/new']">Formulario</button>
+        <button class="btn btn-primary" [routerLink]="['/list']">Lista de Empleados</button>
+    </div>
+    <router-outlet></router-outlet>
+</div>

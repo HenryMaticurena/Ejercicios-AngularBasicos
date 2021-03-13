@@ -1,0 +1,55 @@
+/* .posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    border: 1px solid black;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.post h4{
+    text-align: center;
+} */
+
+/* Ejercicio 1 */
+
+/* .paises{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pais{
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+ .pais img{
+     width: 100%;
+ } */
+
+ /* Ejercicio 2 */
+
+.personaje{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+ }
+
+.personaje img{
+    width: 100%;
+ }
+
+.vivo{
+    border-color: lightgreen;
+}
+
+.muerto{
+    border-color: tomato;
+}
