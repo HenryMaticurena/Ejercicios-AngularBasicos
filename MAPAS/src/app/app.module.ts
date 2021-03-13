@@ -19,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey:'AIzaSyCYnf-9xsTQP9KwiH0C_af3GcZP5WvVda0'
+      apiKey:'credencialApiKey'
     }),
     HttpClientModule
   ],
